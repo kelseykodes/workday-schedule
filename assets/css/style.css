@@ -75,7 +75,7 @@ h5 {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
-  /* color: #77dd77;  color does not work*/
+  /* color: #77dd77;  color does not work* with hover/
 }
 .container {
   margin: 30px;
