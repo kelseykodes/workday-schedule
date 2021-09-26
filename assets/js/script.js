@@ -2,7 +2,7 @@
 var today = moment().format("MMMM Do, YYYY, HH:mm A"); 
 $("#currentDay").text(today);
 
-var saveBtn = document.querySelectorAll(".saveBtn")
+var saveBtn = document.querySelector(".saveBtn")
 //var storedItem = localStorage.getItem("storedItem");
 
 //where user will type schedule stuff
