@@ -2,8 +2,7 @@
 var today = moment().format("MMMM Do, YYYY, HH:mm A"); 
 $("#currentDay").text(today);
 
-var saveBtn = document.querySelector(".saveBtn")
-//var storedItem = localStorage.getItem("storedItem");
+var saveBtn = document.querySelectorAll(".saveBtn")
 
 //where user will type schedule stuff
 var textArea = document.querySelectorAll(".flex-grow-1")
@@ -14,6 +13,15 @@ function savedUserInfo() {
 
     textArea.textContent = storedItem;
 
+    //grabs each saveBtn on HTML and should store scedule stuff in each time-block
+    for (var i = 0; i<saveBtn.length; i++) {
+
+        if (saveBtn[i].textArea){
+            console.log("is this saving");
+        }
+        //textArea += saveBtn[i];
+    }
+         
 }
 
 
