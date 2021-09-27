@@ -4,14 +4,14 @@ $("#currentDay").text(today);
 
 //grabing all 9 save buttons 
 var saveBtn = document.querySelectorAll(".saveBtn")
-
+console.log(saveBtn)
 //where user will type schedule stuff
 var textArea = document.querySelectorAll(".flex-grow-1")
 
 //textArea.textContent = storedItem;
 
 function savedUserInfo() {
-    saveBtn.values;
+    //saveBtn.values;
     var storedItem = localStorage.getItem('storedItem');
 
     textArea.textContent = storedItem;
@@ -29,14 +29,13 @@ function savedUserInfo() {
              } else {
                 alert("Your schedule is now saved!");
         
-                 localStorage.setItem("saveBtn", saveBtn);
+                 localStorage.setItem("saveBtn", storedItem); //also tried saveBtn still nothing
                  savedUserInfo();
              };
 
     });       
 };
-
-console.log(saveBtn)
+}
 
 //might need to take out the "s" on .value on line 25
 //took out "event" in function ()
@@ -53,7 +52,7 @@ saveBtn[0].addEventListener("click", function() {
          localStorage.setItem("saveBtn", saveBtn);
          savedUserInfo();
      };
-});}
+});
 
 
 
