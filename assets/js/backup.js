@@ -2,18 +2,16 @@
 var today = moment().format("MMMM Do, YYYY, HH:mm A"); 
 $("#currentDay").text(today);
 
-//grabing all 9 'save' buttons 
+//grabing all 9 save buttons 
 var saveBtn = document.querySelectorAll(".saveBtn")
 console.log(saveBtn)
 //where user will type schedule stuff
 var textArea = document.querySelectorAll(".textarea")
-console.log(textArea);
+
 //textArea.textContent = storedItem;
 
-
-
-function renderSchedule() {
-    //variable declared to get user events in local storage
+function savedUserInfo() {
+    //variable declared to get user events
     var storedItem = JSON.parse(localStorage.getItem('storedItem')) || {
         event:[],
         hour:[],
@@ -34,34 +32,23 @@ function renderSchedule() {
             var todoText = document.getElementById(dataHour + "hour").value.trim()
             console.log(todoText);
     
-                //displaying storedItem on web page
+            
                 storedItem.event.push(textArea);
                 storedItem.hour.push(dataHour);
                 localStorage.setItem("storedItem",JSON.stringify(storedItem));
         
-            if (textArea === " ") {
-               alert("Oops, You forgot to type something!"); //alert not working
-             } else {
-               alert("Your schedule is now saved!");
-            };
+            // if (textArea == "") {
+            //     alert("Oops, You forgot to type something!");
+            //  } else {
+            //     alert("Your schedule is now saved!");
+            //      localStorage.setItem("saveBtn", saveBtn); //also tried saveBtn still nothing
+            //};
 
     });       
 };
 }
 
-renderSchedule();
-
-
-
-
-
-//----crappy code below-------
-
-
-
-
-
-
+savedUserInfo();
 
 // saveBtn[i].addEventListener("click", function() {
 //     console.log(textArea[i].value);
