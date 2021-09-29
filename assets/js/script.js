@@ -14,9 +14,12 @@ console.log(textArea);
 
 function renderSchedule() {
     for (var i = 9; i <=17; i++){
+        //var i must be equal to first time on schedule app 
         var savedData = localStorage.getItem(i);
+        // local var saveData is grabbing one single hour into the local storage
         document.getElementById(i + "hour").value = savedData
-    }
+    }//making sure my var saveData is equal to an id of "(number)hour in my <textarea> html element"
+
     //grabs each saveBtn on HTML and should store schedule stuff in each time-block
     for (var i = 0; i<saveBtn.length; i++) {
         //console.log(saveBtn[i])
@@ -62,6 +65,7 @@ for (var i = 9; i< 17; i++) {
 //     //grabs specific block
     var dataTime = singleBlock.getAttribute('data-hour')
     var singleBlock = 
+
 //     //checks if that time block is in the past
      if (dataTime < hour) {
         document.querySelectorAll("textarea")[i].style.backgroundColor = "yellow";
