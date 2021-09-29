@@ -64,18 +64,10 @@ for (var i = 9; i< 17; i++) {
     
 //     //grabs specific block
     var dataTime = singleBlock.getAttribute('data-hour')
-    var singleBlock = 
+    var singleBlock = document.getElementById(i);
 
 //     //checks if that time block is in the past
-     if (dataTime < hour) {
-        document.querySelectorAll("textarea")[i].style.backgroundColor = "yellow";
-   
-//     //changes background color
-//     oneBlock.style.backgroundColor='#350002'
-//     //change text color
-//     //document.querySelectorAll("h5")[i].style.color = "black";
-//     //document.querySelectorAll("textarea")[i].style.color = "black";
-//     //document.querySelectorAll("button")[i].style.color = "black";
-//     //document.querySelectorAll("button")[i].style.background= '#350002';
+     if (i < hour) {
+        document.querySelector(".textarea")[i].style.backgroundColor = "yellow";
      }
 };
