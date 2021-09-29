@@ -48,25 +48,28 @@ function renderSchedule() {
 
 renderSchedule();
 
-//changing timeblock colors when dataHour === HH
+//changing timeblock colors when dataHour == HH
 
 var hour = moment().format("HH"); 
 console.log(hour);
 
 
-var timeBlocks = $('[data-hour]')
-console.log(timeBlocks);
+// var timeBlocks = $('[data-hour]')
+// console.log(timeBlocks);
 
-for (var i = 9; i< 17; i++) {
-    //turns var i into a "string"
-    var singleBlock = [i].value
-
-//     //grabs specific block
-    var dataTime = singleBlock.getAttribute('data-hour')
-    //var singleBlock = document.getElementById(i + "hour");
-
+for (var i = 9; i<= 17; i++) {
 //     //checks if that time block is in the past
-     if (i < hour) {
-        document.querySelector(".textarea")[i].style.backgroundColor = "yellow";
+     if ([i] < hour) {
+         //see what number hour is current
+         console.log('get here')
+        //grabs each block that is past the current hour and change it to grey
+         document.getElementById(i + "hour").style.backgroundColor = 'grey';
+         //current schedule events
+     } else if ([i] == hour) {
+        document.getElementById(i + "hour").style.backgroundColor = 'green';
+        //future schedule events
+     } else {
+        ([i] > hour)
+        document.getElementById(i + "hour").style.backgroundColor = 'red'; 
      }
 };
