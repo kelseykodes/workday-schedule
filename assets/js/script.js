@@ -8,7 +8,7 @@ var saveBtn = document.querySelectorAll(".saveBtn")
 
 //where user will type schedule stuff
 var textArea = document.querySelectorAll(".textarea")
-console.log(textArea);
+//console.log(textArea);
 
 
 
@@ -36,7 +36,7 @@ function renderSchedule() {
             //gives local storage key and value
              localStorage.setItem(dataHour, todoText);
 
-            if (textArea == "") {
+            if (todoText == "") {
                alert("Oops! You forgot to type something!"); //alert not working
              } else {
                alert("Your schedule is now saved!");
@@ -48,23 +48,22 @@ function renderSchedule() {
 
 renderSchedule();
 
-//----crappy code below-------
-     
-
 //changing timeblock colors when dataHour === HH
 
 var hour = moment().format("HH"); 
-//console.log(hour);
+console.log(hour);
 
 
 var timeBlocks = $('[data-hour]')
 console.log(timeBlocks);
 
 for (var i = 9; i< 17; i++) {
-    
+    //turns var i into a "string"
+    var singleBlock = [i].value
+
 //     //grabs specific block
     var dataTime = singleBlock.getAttribute('data-hour')
-    var singleBlock = document.getElementById(i);
+    //var singleBlock = document.getElementById(i + "hour");
 
 //     //checks if that time block is in the past
      if (i < hour) {
