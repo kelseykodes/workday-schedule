@@ -1,13 +1,19 @@
-# workday-schedule
-Description:
+# Workday Schedule
+## Description
 This project is set to exercise my knowledge of JavaScript with focuses of; DOM Traversal, Local Storage and Psuedo Clauses.
  
-Installation:
+ ## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation:
 No installation required
 Begin by opening up preferred browser.
 
-Usuage:
-Type in url:
+## Usage
+Type in url: https://kperkins97.github.io/workday-schedule/
 WHEN user opens the scheduler link
 THEN the current day and time is displayed at the top of the calendar.
 User will be presented with timeblocks starting at 09:00 until 17:00.
@@ -21,8 +27,9 @@ THEN the text for that event is saved in local storage.
 If user refreshes the page
 THEN the saved events remain displayed on page.
 
-Credits:
-Collaborator: Reagin Turner, https://github.com/reagintaylor Leci Reid, https://github.com/Leci1259
+## Credits:
+Collaborator: Reagin Turner - https://github.com/reagintaylor &
+ Leci Reid - https://github.com/Leci1259
 
-License:
+## License:
 Copyright (C) 2007 Free Software Foundation, Inc. https://fsf.org/ Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
