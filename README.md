@@ -1,6 +1,7 @@
 # Workday Schedule
 ## Description
-This project is set to exercise my knowledge of JavaScript with focuses of; DOM Traversal, Local Storage and Psuedo Clauses.
+Workday Schedule allows you store improtant events or tasks that you personally need to accomplish and complete four your current work day!
+This application is set to exercise my knowledge of JavaScript with focuses of; DOM Traversal, Local Storage and Psuedo Clauses. 
  
  ## Table of Contents
 - [Installation](#installation)
@@ -10,7 +11,7 @@ This project is set to exercise my knowledge of JavaScript with focuses of; DOM 
 
 ## Installation:
 No installation required
-Begin by opening up preferred browser.
+begin by opening up preferred browser.
 
 ## Usage
 ```
