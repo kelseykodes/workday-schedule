@@ -13,7 +13,8 @@ No installation required
 Begin by opening up preferred browser.
 
 ## Usage
-Type in url: https://kperkins97.github.io/workday-schedule/
+```
+Type in url: https://kelseykodes.github.io/workday-schedule/
 WHEN user opens the scheduler link
 THEN the current day and time is displayed at the top of the calendar.
 User will be presented with timeblocks starting at 09:00 until 17:00.
@@ -26,6 +27,12 @@ WHEN user clicks the save button for that timeblock
 THEN the text for that event is saved in local storage.
 If user refreshes the page
 THEN the saved events remain displayed on page.
+```
+
+## Preview 
+Webpage Preview Screen
+
+<img src='./assets/img/pic.png'>
 
 ## Credits:
 Collaborator: Reagin Turner - https://github.com/reagintaylor &
